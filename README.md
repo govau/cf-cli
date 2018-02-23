@@ -17,6 +17,12 @@ This image is published on [docker hub](https://hub.docker.com/r/govau/cf-cli/).
 docker run -it --rm -v $PWD:/workspace --workdir=/workspace govau/cf-cli cf --version
 ```
 
+The above command when run the first time will automatically pull the latest image from docker hub. If you run it again later, it will use the previously pulled version. To pull the latest version:
+
+```
+docker pull govau/cf-cli
+```
+
 ### How to build it locally?
 
 *Assumes you have docker running*
@@ -35,5 +41,5 @@ docker build --tag cf-cli cf-cli
 
 3. Verify the built image:
 ```
-docker run -it --rm --tag cf-cli cf --version
+docker run -it --rm cf-cli cf --version
 ```
