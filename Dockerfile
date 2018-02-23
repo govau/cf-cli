@@ -1,6 +1,6 @@
 FROM alpine:3.3
 
-ENV PACKAGES "unzip curl openssl ca-certificates git ruby ruby-json libc6-compat bash"
+ENV PACKAGES "unzip curl openssl openssh ca-certificates git ruby ruby-json libc6-compat bash"
 ENV CF_CLI_VERSION "6.33.0"
 ENV CF_AUTOPILOT_VERSION="0.0.5-venapp"
 
