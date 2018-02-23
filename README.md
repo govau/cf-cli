@@ -7,17 +7,19 @@ Provides a docker image with the cloudfoundry CLI and plugins for deploying to c
 
 This repo is automatically built on [docker hub](https://hub.docker.com/r/govau/cf-cli/).
 
-### How to get it?
+### How to use it?
 
-Pull the image from docker hub:
+*Assumes you have docker running*
+
+This image is published on [docker hub](https://hub.docker.com/r/govau/cf-cli/). To use it:
 
 ```
-docker pull govau/cf-cli
+docker run -it --rm -v $PWD:/workspace --workdir=/workspace govau/cf-cli cf --version
 ```
 
 ### How to build it locally?
 
-*Assumes you have docker running locally*
+*Assumes you have docker running*
 
 1. Clone this repository:
 
@@ -25,8 +27,13 @@ docker pull govau/cf-cli
 git clone https://github.com/govau/cf-cli.git
 ```
 
-2. Build the image:
+2. Build the image and tag it cf-cli:
 
 ```
-docker build cf-cli
+docker build --tag cf-cli cf-cli
+```
+
+3. Verify the built image:
+```
+docker run -it --rm --tag cf-cli cf --version
 ```
