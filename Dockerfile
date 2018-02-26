@@ -8,6 +8,7 @@ RUN apt-get update && apt-get -y install \
         curl \
         dnsutils \
         git \
+        jq \
         unzip \
         wget && \
     rm -rf /var/lib/apt/lists/*
