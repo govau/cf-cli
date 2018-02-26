@@ -28,13 +28,11 @@ docker pull govau/cf-cli
 *Assumes you have docker running*
 
 1. Clone this repository:
-
 ```
 git clone https://github.com/govau/cf-cli.git
 ```
 
 2. Build the image and tag it cf-cli:
-
 ```
 docker build --tag cf-cli cf-cli
 ```
