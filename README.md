@@ -5,7 +5,7 @@
 
 Provides a docker image with the cloudfoundry CLI and plugins for deploying to cloud.gov.au.
 
-This repo is automatically built on [docker hub](https://hub.docker.com/r/govau/cf-cli/).
+[CircleCI](https://circleci.com/gh/govau/cf-cli) is used to test each change. The image on the `master` branch is automatically published on [docker hub](https://hub.docker.com/r/govau/cf-cli/).
 
 ### How to use it?
 
