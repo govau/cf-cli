@@ -1,5 +1,6 @@
 [![Docker Automated build](https://img.shields.io/docker/automated/govau/cf-cli.svg?style=plastic)](https://hub.docker.com/r/govau/cf-cli/)
 [![Docker Build Status](https://img.shields.io/docker/build/govau/cf-cli.svg?style=plastic)](https://hub.docker.com/r/govau/cf-cli/)
+[![CircleCI](https://circleci.com/gh/govau/cf-cli.svg?style=svg)](https://circleci.com/gh/govau/cf-cli)
 
 # Cloud Foundry CLI deployed using docker
 
