@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-ENV CF_CLI_VERSION "6.41.0"
+ENV CF_CLI_VERSION "6.44.0"
 ENV CF_AUTOPILOT_VERSION="0.0.7"
 
 # Install base packages
